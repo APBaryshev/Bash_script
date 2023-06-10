@@ -1,1 +1,1 @@
-# Bash_script
+# Bash_script for Zodiac Signs
