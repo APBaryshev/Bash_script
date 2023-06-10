@@ -1,0 +1,74 @@
+#!/bin/bash
+echo "Current date and time - $(date "+%d-%m-%Y %H:%M:%S")"
+
+read -p "Enter your name:" name
+
+echo "Hello, $name! Welcome to my program."
+
+read -p "Enter your mouth of birth (1-12):" birth
+read -p "Enter your day of birth (1-31):" day
+
+if (("$mouth" == 3 & "$day" >= 21)); then
+echo "Your zodiac sign is Aries!"
+elif (("$mouth" == 4 & "$day" >= 20)); then
+echo "Your zodiac sign is Aries!"
+
+elif (("$mouth" == 4 & "$day" >= 21)); then
+echo "Your zodiac sign is Taurus!"
+elif (("$mouth" == 5 & "$day" >= 21)); then
+echo "Your zodiac sign is Taurus!"
+
+elif (("$mouth" == 5 & "$day" >= 22)); then
+echo "Your zodiac sign is Gemini!"
+elif (("$mouth" == 6 & "$day" >= 21)); then
+echo "Your zodiac sign is Gemini!"
+
+elif (("$mouth" == 6 & "$day" >= 22)); then
+echo "Your zodiac sign is Cancer!"
+elif (("$mouth" == 7 & "$day" >= 22)); then
+echo "Your zodiac sign is Cancer!"
+
+elif (("$mouth" == 7 & "$day" >= 23)); then
+echo "Your zodiac sign is Leo!"
+elif (("$mouth" == 8 & "$day" >= 21)); then
+echo "Your zodiac sign is Leo!"
+
+elif (("$mouth" == 8 & "$day" >= 22)); then
+echo "Your zodiac sign is Virgo!"
+elif (("$mouth" == 9 & "$day" >= 23)); then
+echo "Your zodiac sign is Virgo!"
+
+elif (("$mouth" == 9 & "$day" >= 24)); then
+echo "Your zodiac sign is Libra!"
+elif (("$mouth" == 10 & "$day" >= 23)); then
+echo "Your zodiac sign is Libra!"
+
+elif (("$mouth" == 10 & "$day" >= 24)); then
+echo "Your zodiac sign is Scorpio!"
+elif (("$mouth" == 11 & "$day" >= 22)); then
+echo "Your zodiac sign is Scorpio!"
+
+elif (("$mouth" == 11 & "$day" >= 23)); then
+echo "Your zodiac sign is Sagittarius!"
+elif (("$mouth" == 12 & "$day" >= 22)); then
+echo "Your zodiac sign is Sagittarius!"
+
+elif (("$mouth" == 12 & "$day" >= 23)); then
+echo "Your zodiac sign is Capricorn!"
+elif (("$mouth" == 1 & "$day" >= 20)); then
+echo "Your zodiac sign is Capricorn!"
+
+elif (("$mouth" == 1 & "$day" >= 21)); then
+echo "Your zodiac sign is Aquarius!"
+elif (("$mouth" == 2 & "$day" >= 19)); then
+echo "Your zodiac sign is Aquarius!"
+
+elif (("$mouth" == 2 & "$day" >= 20 & "$day" <= 29)); then
+echo "Your zodiac sign is Pisces!"
+elif (("$mouth" == 3 & "$day" >= 20)); then
+echo "Your zodiac sign is Pisces!"
+
+else
+echo "Incorrect input! Try again!"
+
+fi
